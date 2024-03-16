@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  clippy:
+    image: clippy
+    container_name: clippy
+    volumes:
+      - path/to/download/folder:/CLIP # required
+    environment:
+      - CLIP_USERNAME= # don't use quotes here (" or '); required
+      - CLIP_PASSWORD= # don't use quotes here (" or '); required
